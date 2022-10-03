@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7655816128837726984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7651860675688792935}
+  - component: {fileID: 6409775354652720348}
+  - component: {fileID: 8695070117993835340}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7651860675688792935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7655816128837726984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6409775354652720348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7655816128837726984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea668100dd57294e9e3c4cfa8b2cee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wave: 0
+  time: 0
+  IntColorDictionary:
+    m_keys: 0100000005000000190000007d00000071020000350c0000ff3c0000
+    m_values:
+    - {r: 1, g: 0.9887706, b: 0, a: 1}
+    - {r: 0, g: 1, b: 0.015367031, a: 1}
+    - {r: 0, g: 0.9228461, b: 1, a: 1}
+    - {r: 0.015301228, g: 0, b: 1, a: 1}
+    - {r: 0.5934086, g: 0, b: 1, a: 1}
+    - {r: 1, g: 0, b: 0.9863348, a: 1}
+    - {r: 1, g: 0, b: 0.41236067, a: 1}
+  exp_sprites:
+  - value: 1
+    sprite: {fileID: -7264972599485739828, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 5
+    sprite: {fileID: -7292218540346254485, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 25
+    sprite: {fileID: -8918686826913355892, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 125
+    sprite: {fileID: -5815258922555547143, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 625
+    sprite: {fileID: -3233622716010706100, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 3125
+    sprite: {fileID: 4586509288191203383, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  - value: 15625
+    sprite: {fileID: 9111012582116810707, guid: f6be51c716436b246ac01fdc1055e5c2, type: 3}
+  upgrade_list:
+  - type: 1
+    title: Overvoltage
+    description: Increase current damage by 50%
+    sub_class: 0
+  - type: 2
+    title: Turbo-clock
+    description: Increase damage growth per level by 10%
+    sub_class: 0
+  - type: 3
+    title: Reinforcement
+    description: Increase current max health by 50%
+    sub_class: 1
+  - type: 4
+    title: Case Hardening
+    description: Increase max health growth per level by 2
+    sub_class: 1
+  - type: 5
+    title: Repair
+    description: Heal to max health
+    sub_class: 1
+  - type: 6
+    title: Recursive Analysis
+    description: Get 20% more base data from enemies
+    sub_class: 2
+  - type: 7
+    title: Gun Retune
+    description: Shot 5% faster
+    sub_class: 0
+  - type: 8
+    title: 'Capacitor Replacement '
+    description: Increase shot speed growth per level by 0.3%
+    sub_class: 0
+  - type: 9
+    title: Limb Retune
+    description: Increase base speed by 10%
+    sub_class: 2
+  - type: 10
+    title: Motor Replacement
+    description: Increase speed growth per level by 1%
+    sub_class: 2
+  - type: 11
+    title: 'Signal Receiver Booster '
+    description: Increase base data absorption radius by 25%
+    sub_class: 2
+  - type: 12
+    title: Multichannel
+    description: Shoot an extra bullet
+    sub_class: 0
+  - type: 13
+    title: Amplifier
+    description: Increase multi bullet spread by 10 degrees
+    sub_class: 0
+  - type: 14
+    title: Quantum Tunneling
+    description: Increase bullet pierce by 1
+    sub_class: 0
+  - type: 15
+    title: Data Mine
+    description: Get 1 level up
+    sub_class: 2
+  - type: 16
+    title: Dynamic data
+    description: Lower the data requirement for leveling up by 15%
+    sub_class: 2
+  - type: 17
+    title: Electrical overload
+    description: Hits cause electricity to chain to nearby enemies and deal damage
+      (+1 enemy per upgrade)
+    sub_class: 0
+  - type: 18
+    title: Laser Shuriken
+    description: Create a Shuriken that spins around you. (does 50% you damage)
+    sub_class: 0
+--- !u!114 &8695070117993835340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7655816128837726984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4de89934294e143b55ec462e907bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _p_bullet: {fileID: 6501820185849258643, guid: 4cb1866e55f20c84ab298ae833a0d517, type: 3}
+  _p_blade: {fileID: 6501820185849258643, guid: 178e625691abba34ca9dca83bb623aa4, type: 3}
+  _exp_orb: {fileID: 4191385236385943168, guid: d5902f013a6cef2438302364a3d65f25, type: 3}
+  _enemies:
+  - {fileID: 6228625246511388174, guid: 73be00492e4ef424ba725422a1250a57, type: 3}
+  - {fileID: 6228625246511388174, guid: 9fbde3a501b9cfa4bbe5db8da9dfcf05, type: 3}
+  - {fileID: 6228625246511388174, guid: 87b7b3d420e59374d865c09ff4c16e5a, type: 3}
+  - {fileID: 6228625246511388174, guid: 4ec7053ef439b5847ab7233377e89a04, type: 3}
+  - {fileID: 6228625246511388174, guid: 7a4fec74ae7923547a2120e818ad256e, type: 3}
+  _splater: {fileID: 1644427213839114854, guid: 5d84829bd46edf64b9c4f8d13078600f, type: 3}
